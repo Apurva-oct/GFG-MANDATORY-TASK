@@ -1,0 +1,9 @@
+A simple solution would be to run a linear search on the array and return the given element’s first or last occurrence. The problem with this approach is that its worst-case time complexity is O(n), where n is the size of the input. This solution also does not take advantage of the fact that the input is sorted. We can easily solve this problem in O(log(n)) time by modifying the binary search algorithm.
+
+
+Finding first occurrence of the element
+The standard binary search terminates as soon as any occurrence of the given target element is found. To find the given element’s first occurrence, modify the binary search to continue searching even on finding the target element. Instead, update the result to mid and search towards the left (towards lower indices), i.e., modify our search space by adjusting high to mid-1 on finding the target at mid-index.
+
+Time Complexity : O(log n) 
+Auxiliary Space : O(Log n) 
+
