@@ -70,6 +70,7 @@ void allPalPartitions(string str)
 		for (int j=0; j<allPart[i].size(); j++)
 			cout << allPart[i][j] << " ";
 		cout << "\n";
+		cout << "\n";
 	}
 }
 
